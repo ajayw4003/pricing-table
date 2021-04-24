@@ -4,6 +4,7 @@
     justify-content: center;
     padding-left: 23%;
     width: 93%;
+    font-size: 15px;
 }
 .listPrice{
     display: flex;
@@ -19,6 +20,9 @@
     margin: 2px;
     border: 1px solid lightcoral;
     border-radius: 3px;
+}
+.lastCol{
+    width: 40%;
 }
 .priceC{
     display: flex;

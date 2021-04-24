@@ -53,7 +53,7 @@ const SizeAndPricing = () => {
                     <div className = "price">{item.personPrice3}</div>
                     <div className = "price">{item.pet}</div>
                     <div className = "price">{item.lanscape}</div>
-                    <div className = "price">{item.choose}</div>
+                    <div className = "price lastCol">{item.choose}</div>
                 </div>
 
             ))}
@@ -71,7 +71,7 @@ const SizeAndPricing = () => {
                 <div className = "priceC">{person3}</div>
                 <div className = "priceC">{pet}</div>
                 <div className = "priceC">{house}</div>
-                <div className = "priceC">{choose}</div>
+                <div className = "priceC lastCol">{choose}</div>
             </div>
         </div>
     );

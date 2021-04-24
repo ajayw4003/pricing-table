@@ -2,6 +2,7 @@
     display: flex;
     text-align: center;
     justify-content: center;
+    font-size: 15px;
 }
 .item{
     width: 5.5%;
@@ -10,6 +11,9 @@
     margin: 0.5%;
     border-radius: 5px;
 
+}
+.choose{
+    width: 8%;
 }
 #currency{
     width: 15%;

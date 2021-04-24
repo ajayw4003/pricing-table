@@ -3,7 +3,7 @@ import React from 'react';
 
 const Choose = () => {
     return (
-        <div className ="item">
+        <div className ="item choose">
             <div>Choose Option</div>
             <div className = "personSelect">
                 <div>Person</div>

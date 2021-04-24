@@ -14,7 +14,7 @@ const Heading = () => {
             Lanscape
             /House
             </div>
-            <Choose className = "item"/>
+            <Choose className = "item choose"/>
         </div>
     );
 };
