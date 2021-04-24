@@ -4,7 +4,7 @@ export const fixedPrice = [
       personPrice2: "-",
       personPrice3: "-",
       pet:"189",
-      
+      lanscape: "-",
       choose: "-"
     },
     { size: "27x35cm",

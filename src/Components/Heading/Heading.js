@@ -2,7 +2,9 @@ import React from 'react';
 import "./Heading.css";
 import Choose from "./choose"
 
-const Heading = () => {
+const Heading = ({fixedArr, setfixedArr, optionArr, setoptionArr}) => {
+
+
     return (
         <div className = "heading">
             <div  className = "item" id = "currency">Currency</div>
@@ -14,7 +16,13 @@ const Heading = () => {
             Lanscape
             /House
             </div>
-            <Choose className = "item"/>
+            <Choose 
+                className = "item" 
+                fixedArr = { fixedArr } 
+                setfixedArr ={ setfixedArr }
+                optionArr = {optionArr}
+                setoptionArr = {setoptionArr}
+                />
         </div>
     );
 };

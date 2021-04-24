@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { fixedPrice } from "./fixedPrice";
+// import { fixedPrice } from "./fixedPrice";
 import "./SizeAndPricing.css";
 
 
-const SizeAndPricing = () => {
+const SizeAndPricing = ({fixedArr, setfixedArr, optionArr}) => {
     const [width, setWidth] = useState("");
     const [length, setLength] = useState("");
     const [person1, setperson1] = useState("-");
@@ -56,7 +56,7 @@ const SizeAndPricing = () => {
 
     return (
         <div className = "listBlock">
-            {fixedPrice.map((item, i) => (
+            {fixedArr.map((item, i) => (
                 <div key = {i} className = "listPrice">
                     <div className = "price" id = "col1" >{item.size}</div>
                     <div className = "price">{item.personPrice1}</div>
@@ -64,7 +64,7 @@ const SizeAndPricing = () => {
                     <div className = "price">{item.personPrice3}</div>
                     <div className = "price">{item.pet}</div>
                     <div className = "price">{item.lanscape}</div>
-                    <div className = "price lastCol">{item.choose}</div>
+                    <div className = "price lastCol">{optionArr[i]}</div>
                 </div>
 
             ))}
