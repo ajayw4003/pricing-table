@@ -4,8 +4,8 @@ import "./SizeAndPricing.css";
 
 
 const SizeAndPricing = () => {
-    const [width, setWidth] = useState(0);
-    const [length, setLength] = useState(0);
+    const [width, setWidth] = useState("");
+    const [length, setLength] = useState("");
     const [person1, setperson1] = useState("-");
     const [person2, setperson2] = useState("-");
     const [person3, setperson3] = useState("-");
@@ -14,8 +14,16 @@ const SizeAndPricing = () => {
     const [choose, setchoose] = useState("-")
 
 
-    const handleClick =() =>{
-        if(width !== 0 && length !== 0){
+    const handleClick = () =>{
+        console.log(Number(length));
+        if(Number(length) === 0 || Number(width) === 0){
+            setperson1("-");
+            setperson2("-");
+            setperson3("-");
+            sethouse("-");
+            setpet("-");
+        }
+        else if(width !== 0 && length !== 0){
             var pricePerson2 = "-";
             var pricePerson3 = "-";
             var pricePerson1 = Math.ceil((length * width)*0.042);
@@ -40,6 +48,9 @@ const SizeAndPricing = () => {
                 setpet(pet+60);
                 setchoose("-");
             }
+        }
+        else{
+            return;
         }
     }
 
