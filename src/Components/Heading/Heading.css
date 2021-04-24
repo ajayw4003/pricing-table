@@ -1,0 +1,28 @@
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.item{
+    width: 5.5%;
+    height: 20vh;
+    border: 1px solid black;
+    margin: 0.5%;
+    border-radius: 5px;
+
+}
+#currency{
+    width: 15%;
+    border: none;
+    outline: none;
+}
+.select{
+    width: 40%;
+    border-radius: 5px;
+    height: 20%;
+}
+.personSelect{
+    display: flex;
+    justify-content: space-between;
+    padding: 10%;
+}

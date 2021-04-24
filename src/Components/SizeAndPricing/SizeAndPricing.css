@@ -1,0 +1,33 @@
+
+.listBlock{
+    text-align: center;
+    justify-content: center;
+    padding-left: 23%;
+    width: 93%;
+}
+.listPrice{
+    display: flex;
+    width: 60%;
+    margin: 2px;
+}
+.price,.priceC{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 5vh;
+    margin: 2px;
+    border: 1px solid lightcoral;
+    border-radius: 3px;
+}
+.priceC{
+    display: flex;
+    flex-direction: column;
+    height: 12vh;
+}
+#col1{
+    width: 65%;
+}
+input{
+    width: 35%;
+}
