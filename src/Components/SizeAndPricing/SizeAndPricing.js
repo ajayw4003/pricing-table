@@ -9,7 +9,6 @@ const SizeAndPricing = () => {
     const [person1, setperson1] = useState("-");
     const [person2, setperson2] = useState("-");
     const [person3, setperson3] = useState("-");
-    const [person4, setperson4] = useState("-");
     const [pet, setpet] = useState("-");
     const [house, sethouse] = useState("-")
     const [choose, setchoose] = useState("-")
@@ -37,10 +36,9 @@ const SizeAndPricing = () => {
                 setpet(pet+30);
             }
             if(length * width > 2000){
-                let pricePerson4 = pricePerson3 + 30;
-                setperson4(pricePerson4);
                 sethouse(house + 80);
                 setpet(pet+60);
+                setchoose("-");
             }
         }
     }
